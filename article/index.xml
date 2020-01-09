@@ -19,5 +19,42 @@
       <description>My secondhand Canon 7D suddenly developed a &amp;ldquo;Cannot Communicate with Battery&amp;rdquo; warning recently. I didn&#39;t think much of it at the time as the camera still worked perfectly. The only minor annoyance was that the battery power indicator no longer appeared on the top LCD window or in the battery details screen in the main options panel. However, the problem became far greater when a week later I grabbed my camera to head to a local event only to realise that the previously fully charged battery was now empty despite next to no usage.</description>
     </item>
     
+    <item>
+      <title>Rural Broadband Woes</title>
+      <link>http://djohalloran.github.io/article/rural-broadband-woes/</link>
+      <pubDate>Wed, 25 Feb 2015 11:23:25 +0000</pubDate>
+      
+      <guid>http://djohalloran.github.io/article/rural-broadband-woes/</guid>
+      <description>Until recently, Eircom&#39;s fixed-line ADSL service was just about adequate for my broadband needs. But at over 4km from the exchange the average speeds of around 1.5Mbps download and 0.4Mbps upload have become primitive in comparison to what&#39;s available from the newer fibre and mobile broadband services starting to roll out across the country. Things took a turn for the worse a few weeks ago when, despite repeated calls to Eircom support, the best stable speeds I could get dropped to about 0.</description>
+    </item>
+    
+    <item>
+      <title>Dualla Show 2013</title>
+      <link>http://djohalloran.github.io/article/dualla-show-2013/</link>
+      <pubDate>Fri, 26 Jul 2013 14:22:10 +0000</pubDate>
+      
+      <guid>http://djohalloran.github.io/article/dualla-show-2013/</guid>
+      <description>Check out the new website for this year&#39;s Dualla Show: www.duallashow.ie                            Dualla Show Website
+   </description>
+    </item>
+    
+    <item>
+      <title>Setting up a Squeezebox Duet Without a Controller</title>
+      <link>http://djohalloran.github.io/article/squeezebox-duet-without-controller/</link>
+      <pubDate>Tue, 20 Mar 2012 06:57:37 +0000</pubDate>
+      
+      <guid>http://djohalloran.github.io/article/squeezebox-duet-without-controller/</guid>
+      <description>A few years ago my sister bought a Squeezebox Duet to play her music. It&#39;s a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and streams music from any device on it running the Squeezecenter Server software and plays it through your own speaker setup. It&#39;s all managed using a separate Controller that wirelessly connects to the headless receiver and enables you to browse your music collection and decide what gets played.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting in Joomla</title>
+      <link>http://djohalloran.github.io/article/syntax-highlighting-in-joomla/</link>
+      <pubDate>Tue, 20 Mar 2012 06:57:24 +0000</pubDate>
+      
+      <guid>http://djohalloran.github.io/article/syntax-highlighting-in-joomla/</guid>
+      <description>Code listings are often rendered badly in online articles and blogs making them difficult to read and understand. A nice utility to help format and display code within HTML is Alex Gorbatchev&#39;s widely used SyntaxHighlighter. It is developed in JavaScript so runs in any modern browser. Numerous Joomla implementations of SyntaxHighlighter exist in the form of plugins (have a look here: http://extensions.joomla.org/extensions/core-enhancements/coding-a-scripts-integration/code-display. The one I used is called Joomler SyntaxHighlighter and was developed for Joomla 1.</description>
+    </item>
+    
   </channel>
 </rss>

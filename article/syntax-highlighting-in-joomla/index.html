@@ -7,21 +7,22 @@
         <meta name="description" content="Bilberry Premium Theme for Hugo.">
         <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
         <meta name="generator" content="Hugo 0.62.2" />
-        <title> Categories | Reverting to Type</title>
-        <meta name="description" content="Categories - Bilberry Premium Theme for Hugo.">
-        <meta itemprop="name" content="Categories">
-        <meta itemprop="description" content="Categories - Bilberry Premium Theme for Hugo.">
-        <meta property="og:title" content="Categories">
-        <meta property="og:description" content="Categories - Bilberry Premium Theme for Hugo.">
+        <title> Syntax Highlighting in Joomla | Reverting to Type</title>
+        <meta name="description" content="Syntax Highlighting in Joomla - Bilberry Premium Theme for Hugo.">
+        <meta itemprop="name" content="Syntax Highlighting in Joomla">
+        <meta itemprop="description" content="Syntax Highlighting in Joomla - Bilberry Premium Theme for Hugo.">
+        <meta property="og:title" content="Syntax Highlighting in Joomla">
+        <meta property="og:description" content="Syntax Highlighting in Joomla - Bilberry Premium Theme for Hugo.">
         <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
-        <meta property="og:url" content="http://djohalloran.github.io/categories/">
-        <meta property="og:site_name" content="Reverting to Type"><meta property="og:type" content="website">
+        <meta property="og:url" content="http://djohalloran.github.io/article/syntax-highlighting-in-joomla/">
+        <meta property="og:site_name" content="Reverting to Type">
+        <meta property="og:type" content="article">
         <link rel="icon" type="image/png" href="http://djohalloran.github.io/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="http://djohalloran.github.io/favicon-16x16.png" sizes="16x16">
 
 	
-	  <link href="/categories/" rel="alternate" type="application/rss+xml" title="Reverting to Type" />
-	  <link href="/categories/" rel="feed" type="application/rss+xml" title="Reverting to Type" />
+	  <link href="/article/syntax-highlighting-in-joomla/" rel="alternate" type="application/rss+xml" title="Reverting to Type" />
+	  <link href="/article/syntax-highlighting-in-joomla/" rel="feed" type="application/rss+xml" title="Reverting to Type" />
 	
 
         
@@ -85,24 +86,78 @@
 
         <div class="main container">
             
-
-<div class="content">
+     
     <div class="article-wrapper u-cf single">
-        <a class="bubble" href="/categories/">
-            <i class="fa fa-fw fa-list"></i>
-        </a>
+        
+            <a class="bubble" href="http://djohalloran.github.io/article/syntax-highlighting-in-joomla/">
+    <i class="fa fa-fw fa-pencil"></i>
+</a>
 
-        <article class="article">
-            <div class="content">
-                <h3>Categories</h3>
-                <hr>
-                <ul id="all-categories">
-                    
-                </ul>
-            </div>
-        </article>
+<article class="default article">
+    
+
+    <div class="content">
+    <h3><a href="http://djohalloran.github.io/article/syntax-highlighting-in-joomla/">Syntax Highlighting in Joomla</a></h3>
+    <div class="meta">
+        
+            
+                <span class="date moment">2012-03-20</span>
+            
+        
+
+        
+
+        
+
+        
     </div>
+
+    
+        <p>Code listings are often rendered badly in online articles and blogs making them difficult to read and understand. A nice utility to help format and display code within HTML is <a href="http://alexgorbatchev.com/SyntaxHighlighter/">Alex Gorbatchev's widely used SyntaxHighlighter</a>. It is developed in JavaScript so runs in any modern browser. Numerous Joomla implementations of SyntaxHighlighter exist in the form of plugins (have a look here: <a href="http://extensions.joomla.org/extensions/core-enhancements/coding-a-scripts-integration/code-display">http://extensions.joomla.org/extensions/core-enhancements/coding-a-scripts-integration/code-display</a>. The one I used is called Joomler SyntaxHighlighter and was developed for Joomla 1.6 but works in Joomla 2.5 also. It enables you to display nice code listings like this:</p>
+<pre><code>function foo()
+{
+ if (counter &amp; lt;= 10)
+ return;
+ // it works!
+}
+</code></pre><p>Simply install and enable the plugin in your Joomla installation and highlight any of your code snippets by including some properties within the <!-- raw HTML omitted --> tag while in HTML editing mode. For example:</p>
+<pre><code>&lt;pre class=&quot;brush: js; gutter: true;&quot;}
+ function foo()
+ {
+  if (counter &amp;amp; lt;= 10)
+  return;
+  // it works!
+ }
+&lt;/pre&gt;
+</code></pre><p>The SyntaxHighligher supports a whole bunch of brushes including JavaScript, PHP and even Bash. it also includes an auto brush facility which can automatically analyze the code listing to determine what brush to use if you don't specify one (it defaults to plain text).</p>
+<p>Note that when using the preformatted style (i.e. the <code>&lt;pre/&gt;</code> tag) you will need to escape all right angle brackets must be HTML escaped (meaning all <code>&lt;</code> must be replaced with <code>&amp;lt;</code>).</p>
+<p>Here's a bash example:</p>
+<pre><code>sudo ./make_me_a_sandwich.sh
+</code></pre><p>Some links:</p>
+<p><a href="http://www.webresourcesdepot.com/11-syntax-highlighters-to-beautify-code-presentation/">http://www.webresourcesdepot.com/11-syntax-highlighters-to-beautify-code-presentation/</a></p>
+
+    
 </div>
+
+    
+<div class="footer no-tags">
+
+
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    
+
+     
 
         </div>
 
@@ -180,8 +235,7 @@
                 
                 by Dermot O&#39;Halloran
             </a>
-	    -
-		<a href="http://djohalloran.github.io/categories/index.xml">RSS</a>
+	    
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
