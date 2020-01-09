@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://localhost/article/</loc>
+    <lastmod>2020-01-08T20:21:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/article/test/</loc>
+    <lastmod>2020-01-08T20:21:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/</loc>
+    <lastmod>2020-01-08T20:21:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/page/about-bilberry/</loc>
+    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/page/</loc>
+    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost/author/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost/tags/</loc>
+  </url>
+  
+</urlset>

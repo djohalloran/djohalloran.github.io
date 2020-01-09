@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Reverting to Type</title>
+    <link>http://localhost/article/</link>
+    <description>Recent content in Articles on Reverting to Type</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 08 Jan 2020 20:21:51 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost/article/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cannot Communicate With Battery</title>
+      <link>http://localhost/article/test/</link>
+      <pubDate>Wed, 08 Jan 2020 20:21:51 +0000</pubDate>
+      
+      <guid>http://localhost/article/test/</guid>
+      <description>My secondhand Canon 7D suddenly developed a &amp;ldquo;Cannot Communicate with Battery&amp;rdquo; warning recently. I didn&#39;t think much of it at the time as the camera still worked perfectly. The only minor annoyance was that the battery power indicator no longer appeared on the top LCD window or in the battery details screen in the main options panel. However, the problem became far greater when a week later I grabbed my camera to head to a small school event only to realise that the previously fully charged battery was now empty despite next to no usage.</description>
+    </item>
+    
+  </channel>
+</rss>
