@@ -3,40 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost/article/</loc>
+    <loc>http://djohalloran.github.io/article/</loc>
     <lastmod>2020-01-08T20:21:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/article/test/</loc>
+    <loc>http://djohalloran.github.io/article/canon-cannot-communicate-with-battery/</loc>
     <lastmod>2020-01-08T20:21:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>http://djohalloran.github.io/</loc>
     <lastmod>2020-01-08T20:21:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/page/about-bilberry/</loc>
+    <loc>http://djohalloran.github.io/page/about/</loc>
     <lastmod>2017-11-01T13:18:45+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/page/</loc>
+    <loc>http://djohalloran.github.io/page/</loc>
     <lastmod>2017-11-01T13:18:45+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost/author/</loc>
+    <loc>http://djohalloran.github.io/author/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/categories/</loc>
+    <loc>http://djohalloran.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost/tags/</loc>
+    <loc>http://djohalloran.github.io/tags/</loc>
   </url>
   
 </urlset>
