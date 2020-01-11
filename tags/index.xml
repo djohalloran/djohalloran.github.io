@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Reverting to Type</title>
+    <link>https://practicalreason.net/tags/</link>
+    <description>Recent content in Tags on Reverting to Type</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>dermot@practicalreason.net (Dermot O&#39;Halloran)</managingEditor>
+    <webMaster>dermot@practicalreason.net (Dermot O&#39;Halloran)</webMaster>
+    <lastBuildDate>Sun, 11 Feb 2018 20:20:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://practicalreason.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>battery</title>
+      <link>https://practicalreason.net/tags/battery/</link>
+      <pubDate>Sun, 11 Feb 2018 20:20:55 +0000</pubDate>
+      <author>dermot@practicalreason.net (Dermot O&#39;Halloran)</author>
+      <guid>https://practicalreason.net/tags/battery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>camera</title>
+      <link>https://practicalreason.net/tags/camera/</link>
+      <pubDate>Sun, 11 Feb 2018 20:20:55 +0000</pubDate>
+      <author>dermot@practicalreason.net (Dermot O&#39;Halloran)</author>
+      <guid>https://practicalreason.net/tags/camera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>broadband</title>
+      <link>https://practicalreason.net/tags/broadband/</link>
+      <pubDate>Wed, 25 Feb 2015 11:23:25 +0000</pubDate>
+      <author>dermot@practicalreason.net (Dermot O&#39;Halloran)</author>
+      <guid>https://practicalreason.net/tags/broadband/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>router</title>
+      <link>https://practicalreason.net/tags/router/</link>
+      <pubDate>Wed, 25 Feb 2015 11:23:25 +0000</pubDate>
+      <author>dermot@practicalreason.net (Dermot O&#39;Halloran)</author>
+      <guid>https://practicalreason.net/tags/router/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

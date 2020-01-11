@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Setting up a Squeezebox Duet Without a Controller - Reverting to Type</title>
+  <meta name="description" content="A few years ago my sister bought a Squeezebox Duet to play her music. It&#39;s a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and streams music from any device on it running the Squeezecenter Server software and plays it through your own speaker setup. It&#39;s all managed using a separate Controller that wirelessly connects to the headless receiver and enables you to browse your music collection and decide what gets played.">
+  <meta name="author" content="Dermot O&#39;Halloran"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Reverting to Type",
+    
+    "url": "https:\/\/practicalreason.net"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/practicalreason.net"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/practicalreason.net",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/practicalreason.net\/post\/squeezebox-duet-without-controller\/",
+          "name": "Setting up a squeezebox duet without a controller"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Dermot O\x27Halloran"
+  },
+  "headline": "Setting up a Squeezebox Duet Without a Controller",
+  "description" : "A few years ago my sister bought a Squeezebox Duet to play her music. It\x27s a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and streams music from any device on it running the Squeezecenter Server software and plays it through your own speaker setup. It\x27s all managed using a separate Controller that wirelessly connects to the headless receiver and enables you to browse your music collection and decide what gets played.",
+  "inLanguage" : "en",
+  "wordCount":  2345 ,
+  "datePublished" : "2012-03-20T06:57:37",
+  "dateModified" : "2012-03-20T06:57:37",
+  "image" : "https:\/\/practicalreason.net",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/practicalreason.net\/post\/squeezebox-duet-without-controller\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/practicalreason.net",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/practicalreason.net",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Setting up a Squeezebox Duet Without a Controller" />
+<meta property="og:description" content="A few years ago my sister bought a Squeezebox Duet to play her music. It&#39;s a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and streams music from any device on it running the Squeezecenter Server software and plays it through your own speaker setup. It&#39;s all managed using a separate Controller that wirelessly connects to the headless receiver and enables you to browse your music collection and decide what gets played.">
+<meta property="og:url" content="https://practicalreason.net/post/squeezebox-duet-without-controller/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Reverting to Type" />
+
+  <meta name="twitter:title" content="Setting up a Squeezebox Duet Without a Controller" />
+  <meta name="twitter:description" content="A few years ago my sister bought a Squeezebox Duet to play her music. It&#39;s a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and …">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dohalloran" />
+  <meta name="twitter:creator" content="@dohalloran" />
+  <link href='https://practicalreason.net/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.62.2" />
+  <link rel="alternate" href="https://practicalreason.net/index.xml" type="application/rss+xml" title="Reverting to Type"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://practicalreason.net/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://practicalreason.net/css/highlight.min.css" /><link rel="stylesheet" href="https://practicalreason.net/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://practicalreason.net">Reverting to Type</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Reverting to Type</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Setting up a Squeezebox Duet Without a Controller</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on March 20, 2012
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2345&nbsp;words
+  
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>A few years ago my sister bought a Squeezebox Duet to play her music. It's a superb solution. It consists of a small black box known as a Receiver. This connects to your wireless or LAN network and streams music from any device on it running the Squeezecenter Server software and plays it through your own speaker setup. It's all managed using a separate Controller that wirelessly connects to the headless receiver and enables you to browse your music collection and decide what gets played.</p>
+<p>Unfortunately, one day the controller just stopped working. Without the controller it became impossible to configure the Receiver. A new controller cost anything up to 300 euro and just wasn't worth the expense. Luckily, after some investigating, I found a pretty good solution - someone had written an application called Net:UDAP that could connect to a Squeezebox Receiver and enable you to setup and configure the receiver's wireless settings so it can connect to your network.</p>
+<p>The application comes in the form of a Perl script which when run, connects to the receiver over a direct ethernet connection and enables you to manually set the receiver's settings just like you would have done with a working controller. Once configured you can then use the free Squeezebox app available from the Android market or Apple Store on your phone or tablet to control the Receiver just like you would with the original controller.</p>
+<h3 id="summary-of-the-steps">Summary of the Steps</h3>
+<p>The following is a short summary of the steps. More detailed instructions are found further down.</p>
+<p>1.. Start by performing a factory reset the Squeezebox Receiver. Do this by holding down the button for five seconds or more until it starts flashing red.</p>
+<p>2.. Connect the Receiver directly to your PC or laptop using an ethernet cable.</p>
+<p>3.. Determine the IP address of the Receiver. Use <code>ipconfig /all</code> in Windows or <code>ifconfig -a</code> in Unix.</p>
+<p>4.. Install Perl on your operating system.</p>
+<p>5.. Download the Net::UDAP application from <a href="https://projects.robinbowes.com/Net-UDAP/trac/browser/branches/1.0.x">https://projects.robinbowes.com/Net-UDAP/trac/browser/branches/1.0.x</a></p>
+<p>6.. Run the Net::UDAP application's <code>udap_shell.pl</code> script as follows to connect to the Squeezebox Receiver:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">udap_shell.pl --local-address [Squeezebox Receiver IP address]
+</code></pre></div><p>7.. Run the scripts commands in its CLI to configure the receiver's wireless network settings and the address of the Squeezebox server running on your network.</p>
+<h3 id="prepare-the-squeezebox-receiver-and-get-its-ip-address">Prepare the Squeezebox Receiver and get its IP Address</h3>
+<p>1.. Before starting, the Squeezebox Receiver must be in init mode indicated by its front button flashing slowly red. Do this by performing a factory reset on the receiver by pressing and holding the button for five seconds or more until the light starts flashing red.</p>
+
+<link rel="stylesheet" href="https://practicalreason.net/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/squeezebox-01.jpg" alt="Resetting the receiver"/>
+    </div>
+    <a href="/images/squeezebox-01.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Resetting the receiver</p>
+      </figcaption>
+  </figure>
+</div>
+
+<p>2.. Once in init mode, connect the Squeezebox Receiver to your laptop using an ethernet cable.</p>
+<p>3.. Turn off your laptop's wireless so it's only looking at the LAN network.</p>
+<p>4.. Open a command window and get the IP address of the Squeezebox Receiver using the following DOS command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">    ipconfig /all
+</code></pre></div><p>You should get some output like the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">    C:\Users\Dermot&gt; ipconfig /all
+
+    Windows IP Configuration
+
+       Host Name . . . . . . . . . . . . : MyLaptop
+       Primary Dns Suffix  . . . . . . . : 
+       Node Type . . . . . . . . . . . . : Hybrid
+       IP Routing Enabled. . . . . . . . : No
+       WINS Proxy Enabled. . . . . . . . : No
+       DNS Suffix Search List. . . . . . : 
+
+    Wireless LAN adapter Wireless Network Connection:
+
+       Media State . . . . . . . . . . . : Media disconnected
+       Connection-specific DNS Suffix  . :
+       Description . . . . . . . . . . . : Intel(R) Centrino(R) Ultimate-N 6300 AGN
+       Physical Address. . . . . . . . . : 24-77-03-26-B3-D4
+       DHCP Enabled. . . . . . . . . . . : Yes
+       Autoconfiguration Enabled . . . . : Yes
+
+    Ethernet adapter Local Area Connection:
+
+       Connection-specific DNS Suffix  . :
+       Description . . . . . . . . . . . : Intel(R) 82579LM Gigabit Network Connection
+       Physical Address. . . . . . . . . : 00-21-CC-72-45-01
+       DHCP Enabled. . . . . . . . . . . : Yes
+       Autoconfiguration Enabled . . . . : Yes
+       Link-local IPv6 Address . . . . . : fe80::a4fb:9202:38d6:a32a%14(Preferred)
+       Autoconfiguration IPv4 Address. . : 192.168.1.4(Preferred)
+       Subnet Mask . . . . . . . . . . . : 255.255.0.0
+       Default Gateway . . . . . . . . . :
+       DHCPv6 IAID . . . . . . . . . . . : 285221324
+       DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-16-B2-73-D0-00-21-CC-72-45-01
+       DNS Servers . . . . . . . . . . . : fec0:0:0:ffff::1%1
+                                           fec0:0:0:ffff::2%1
+                                           fec0:0:0:ffff::3%1
+       NetBIOS over Tcpip. . . . . . . . : Enabled
+</code></pre></div><p>5.. Examine the output and look for the Ethernet adapter details. Here you should find a section Autoconfiguration IPv4 Address which will list the IP address assigned to the device connected on the ethernet port. See the highlighted line above for an example - you can see how the IP address of the Receiver is 192.168.1.4.</p>
+<h3 id="install-perl">Install Perl</h3>
+<p>To run the Net:UDAP application you'll need to have Perl installed on your environment. Perl is typically installed by default on Ubuntu. A good way to run Perl scripts in Windows is using the <a href="http://www.activestate.com/activeperl">ActivePerl</a> distribution.</p>
+<p>Download the installer file for its <a href="http://www.activestate.com/activeperl/downloads">free community edition from here</a> and run it to install Perl on your Windows environment. Once installed run the command perl -version within a command window to test that it works:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Dermot&gt;perl -version
+
+This is perl 5, version 14, subversion 2 (v5.14.2) built for MSWin32-x64-multi-thread
+(with 1 registered patch, see perl -V for more detail)
+
+Copyright 1987-2011, Larry Wall
+
+Binary build 1402 [295342] provided by ActiveState http://www.ActiveState.com
+Built Oct  7 2011 15:19:36
+
+Perl may be copied only under the terms of either the Artistic License or the
+GNU General Public License, which may be found in the Perl 5 source kit.
+
+Complete documentation for Perl, including FAQ lists, should be found on
+this system using &#34;man perl&#34; or &#34;perldoc perl&#34;.  If you have access to the
+Internet, point your browser at http://www.perl.org/, the Perl Home Page.
+
+C:\Users\Dermot&gt;
+</code></pre></div><h3 id="run-the-application-to-connect-to-the-squeezebox-receiver">Run the Application to Connect to the Squeezebox Receiver</h3>
+<p>1.. Download the Net::UDAP application ZIP and extract the archive to any location.</p>
+<p>2.. To get the Net::UDAP application to connect to the Squeezebox Receiver you need to run its udap_shell.pl script and specify the IP address of the Receiver you determined in the previous section. Here's an example of the command where the IP address of the Receiver is 169.254.163.42:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">C:\branches\1.0.x\scripts&gt;udap_shell.pl --local-address 169.254.163.42
+</code></pre></div><p>If the script successfully connects to the network address and you should see a command line interface as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">    C:\branches\1.0.x\scripts&gt;UDAP&gt;
+</code></pre></div><pre><code>If the connection fails then it's typically because the IP address is incorrect. See the Troubleshooting section for some help.
+</code></pre>
+<p>3.. Use the help command to see what commands are available in the CLI:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">UDAP&gt; help
+ Type &#39;help command&#39; for more detailed help on a command.
+   Commands:
+    configure - configure a device
+    discover  - Discover UDAP devices and get their current configuration
+    exit      - Exit configure mode (if configuring a device), otherwise exit application
+    fields    - Display a list of valid device fields
+    help      - prints this screen, or help on &#39;command&#39;
+    list      - List discovered devices, or a specific information about a device
+    quit      - Exit configure mode (if configuring a device), otherwise exit application
+    reset     - Reset a device
+    save_data - Save data parameters to device(s)
+    save_ip   - Save ip parameters to device(s)
+    set       - Set device parameter(s)
+</code></pre></div><p>4.. The next step is to use the CLI to discover the Receiver and start its configuration.</p>
+<h3 id="discover-and-configure-the-receiver">Discover and Configure the Receiver</h3>
+<p>Once you've launched the script and connected to the Receiver you can begin to configure it.</p>
+<p>1.. The first step is to tell the application which Squeezebox Receiver you wish to configure. Do this using the discover command to scan the IP address for Squeezebox Receivers running on the connection. You should get the following type of output:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP&gt;
+     discover
+      info: *** Broadcasting adv_discovery message to MAC address 00:00:00:00:00:00 on 255.255.255.255
+      info:   adv_discovery response received from 00:04:20:16:05:8f
+      info: *** Broadcasting get_ip message to MAC address 00:04:20:16:05:8f on 255.255.255.255
+      info:   get_ip response received from 00:04:20:16:05:8f
+      info: *** Broadcasting get_data message to MAC address 00:04:20:16:05:8f on 255.255.255.255
+      info:   get_data response received from 00:04:20:16:05:8f
+</code></pre></div><p>2.. When the scan has completed as above, use the list command to display the available Squeezebox Receivers. There should only be one in this case:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP&gt; list
+
+       #    MAC Address    Type       Status
+      == ================= ========== ===============
+       1 00:04:20:16:05:8f squeezebox init
+</code></pre></div><p>3.. Use the configure command to select the Squeezebox Receiver to configure based on its number (it will always be 1):</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP&gt; configure 1
+
+      UDAP [1] (squeezebox 16058f)&gt;
+</code></pre></div><p>Notice the prompt has changed to show the device number [1] and name</p>
+<p>4.. You are now ready to change the Receiver's configuration details. Use the list command to display the current settings. You'll see a list of all the configuration fields and their default values:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP [1] (squeezebox 16058f)&gt; list
+
+                   bridging: 0
+                   hostname:
+                  interface: 0
+                lan_gateway: 0.0.0.0
+                lan_ip_mode: 1
+        lan_network_address: 0.0.0.0
+            lan_subnet_mask: 255.255.255.0
+                primary_dns: 0.0.0.0
+              secondary_dns: 0.0.0.0
+             server_address: 0.0.0.0
+      squeezecenter_address: 0.0.0.0
+         squeezecenter_name:
+              wireless_SSID:
+           wireless_channel: 0
+            wireless_keylen: 0
+              wireless_mode: 0
+         wireless_region_id: 0
+         wireless_wep_key_0:
+         wireless_wep_key_1:
+         wireless_wep_key_2:
+         wireless_wep_key_3:
+            wireless_wep_on: 0
+        wireless_wpa_cipher: 1
+            wireless_wpa_on: 0
+          wireless_wpa_mode: 1
+           wireless_wpa_psk:
+</code></pre></div><p>To see a list of all the available fields and their descriptions use the fields command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP&gt; fields
+                   bridging: Use device as a wireless bridge (not sure about this)
+                   hostname: Device hostname (is this set automatically?)
+                  interface: 0 - wireless, 1 - wired
+                lan_gateway: IP address of default network gateway, (e.g. 192.168.1.1)
+                lan_ip_mode: 0 - Use static IP details, 1 - use DHCP to discover IP details
+        lan_network_address: IP address of device, (e.g. 192.168.1.10)
+            lan_subnet_mask: Subnet mask of local network, (e.g. 255.255.255.0)
+                primary_dns: IP address of primary DNS server
+              secondary_dns: IP address of secondary DNS server
+             server_address: IP address of currently active server (either Squeezenetwork or local server
+      squeezecenter_address: IP address of local Squeezecenter server
+         squeezecenter_name: Name of local Squeezecenter server (???)
+              wireless_SSID: Wireless network name
+           wireless_channel: Wireless channel (used by AdHoc mode???)
+            wireless_keylen: Length of wireless key, (0 - 64-bit, 1 - 128-bit)
+              wireless_mode: 0 - Infrastructure, 1 - Ad Hoc
+         wireless_region_id: 4 - US, 6 - CA, 7 - AU, 13 - FR, 14 - EU, 16 - JP, 21 - TW, 23 - CH
+         wireless_wep_key_0: WEP Key 0
+         wireless_wep_key_1: WEP Key 1
+         wireless_wep_key_2: WEP Key 2
+         wireless_wep_key_3: WEP Key 3
+            wireless_wep_on: 0 - WEP Off, 1 - WEP On
+        wireless_wpa_cipher: 1 - CCMP, 2 - TKIP
+            wireless_wpa_on: 0 - WPA Off, 1 - WPA On
+          wireless_wpa_mode: 1 - WPA, 2 - WPA2
+           wireless_wpa_psk: WPA Public Shared Key
+</code></pre></div><p>In general you only need to configure a subset of these fields to get things working. It all depends on the type of network you want the Receiver to connect to.</p>
+<ul>
+<li>server_address - It's not clear from the documentation what exactly this setting relates to but if it's not set it doesn't work. I assumed it relates to the IP address of the Squeezebox server (the same as the squeezecenter_address field). You decide what the IP value is - make sure its a unique address anywhere on your network.</li>
+<li>lan_subnet_mask - The subnet mask of your network. The default is 255.255.255.0 so if your subnet mask is the same then there's no need to change it.</li>
+<li>squeezecenter_address - The IP address of the Squeezecenter server running on your network.</li>
+<li>wireless_SSID - The SSID of your wireless network.</li>
+<li>wireless_wep_key_0</li>
+<li>wireless_wep</li>
+<li>interface- 0 - wireless, 1 - wired</li>
+<li>hostname - A name for the Squeezebox Receiver so you can easily identify it.</li>
+</ul>
+<p>NOTE THAT THESE ARE CASE SENSITIVE SO BE CAREFUL! Here's an example where the wireless network was WPA enabled and therefore just required a passphrase.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">    set server_address=192.168.1.3 squeezecenter_address=192.168.1.3 squeezecenter_name=Squeezecenter wireless_SSID=shed wireless_wpa_psk=rathcloughduallacashel wireless_wpa_on=1 wireless_wpa_mode=2 wireless_wpa_cipher=2 interface=0 hostname=squeezebox-duet
+</code></pre></div><p>5.. Type list to see the values have changed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP [1] (squeezebox 16058f)&gt; list
+                   bridging: 0
+                   hostname: squeezebox-duet
+                  interface: 0
+                lan_gateway: 0.0.0.0
+                lan_ip_mode: 1
+        lan_network_address: 0.0.0.0
+            lan_subnet_mask: 255.255.255.0
+                primary_dns: 0.0.0.0
+              secondary_dns: 0.0.0.0
+             server_address: 192.168.1.3
+      squeezecenter_address: 192.168.1.3
+         squeezecenter_name:
+              wireless_SSID: shed
+           wireless_channel: 0
+            wireless_keylen: 0
+              wireless_mode: 0
+         wireless_region_id: 0
+         wireless_wep_key_0: 
+         wireless_wep_key_1:
+         wireless_wep_key_2:
+         wireless_wep_key_3:
+            wireless_wep_on: 0
+        wireless_wpa_cipher: 2
+            wireless_wpa_on: 1
+          wireless_wpa_mode: 2
+           wireless_wpa_psk: rathcloughduallacashel
+</code></pre></div><p>6.. Use the save_data command to save the settings to the device:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP [1] (squeezebox 16058f)&gt; save_data
+      info: *** Broadcasting set_data message to MAC address 00:04:20:16:05:8f on 255.255.255.255
+      ucp_method set_data callback not implemented yet at /home/robin/projects/Net-UDAP/trunk/scripts/../src/Net-UDAP/lib/Net/UDAP.pm line 281
+      Raw msg:
+                00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+
+      00000000  00 02 00 00 00 00 00 00 - 00 01 00 04 20 16 05 8F  ............ ...
+      00000010  00 01 C0 01 00 00 01 00 - 01 00 06 00 1A           .............
+      info:   set_data response received from 00:04:20:16:05:8f
+</code></pre></div><p>7.. Finally, use the reset command to reset the Squeezebox Receiver in order to apply the changes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">     UDAP [1] (squeezebox 16058f)&gt; reset
+      info: *** Broadcasting reset message to MAC address 00:04:20:16:05:8f on 255.255.255.255
+      ucp_method reset callback not implemented yet at /home/robin/projects/Net-UDAP/trunk/scripts/../src/Net-UDAP/lib/Net/UDAP.pm line 281
+      Raw msg:
+
+                00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F  0123456789ABCDEF
+
+      00000000  00 02 00 00 00 00 00 00 - 00 01 00 04 20 16 05 8F  ............ ...
+      00000010  00 01 C0 01 00 00 01 00 - 01 00 04                 ...........
+      info:   reset response received from 00:04:20:16:05:8f
+</code></pre></div><p>Ignore any warnings.</p>
+<p>8.. The Squeezebox Receiver should reset and when it restarts it should begin connecting to your wireless network using the new settings. The Receiver will indicate a successful connection when a dark white light appears.</p>
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="/images/squeezebox-02.jpg" alt="Connected!"/>
+    </div>
+    <a href="/images/squeezebox-02.jpg" itemprop="contentUrl"></a>
+      <figcaption>
+          <p>Connected!</p>
+      </figcaption>
+  </figure>
+</div>
+
+<p>9.. Install the Squeezebox App on your phone or tablet to connect to the Squeezebox server and play your music.</p>
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fpracticalreason.net%2fpost%2fsqueezebox-duet-without-controller%2f&amp;text=Setting%20up%20a%20Squeezebox%20Duet%20Without%20a%20Controller&amp;via=dohalloran" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fpracticalreason.net%2fpost%2fsqueezebox-duet-without-controller%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://practicalreason.net/post/syntax-highlighting-in-joomla/" data-toggle="tooltip" data-placement="top" title="Syntax Highlighting in Joomla">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="https://practicalreason.net/post/mounting-network-locations-on-linux-using-samba/" data-toggle="tooltip" data-placement="top" title="Mounting Network Locations on Linux Using Samba">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:dermot@practicalreason.net" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/djohalloran" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/dohalloran" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Dermot O&#39;Halloran
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2018
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://practicalreason.net">Reverting to Type</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.62.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://practicalreason.net/js/main.js"></script>
+<script src="https://practicalreason.net/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://practicalreason.net/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '016589942105066015434:5zcne19zyy5';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
